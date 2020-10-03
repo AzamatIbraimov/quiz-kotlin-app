@@ -7,6 +7,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kg.midterm.quizapp.DataAccess.QuizReaderDBHelper
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(view.context, QuizActivity::class.java)
             view.context.startActivity(intent)
         }
+
     }
 
     private fun showBestScoreOfUser(){
