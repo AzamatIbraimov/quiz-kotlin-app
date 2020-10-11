@@ -11,7 +11,6 @@ class Quiz() : Parcelable {
     private var option_four: String = ""
     private var correct_answer: Int = 0
 
-
     constructor(question: String, option_one: String, option_two: String, option_three: String, option_four: String, correct_answer: Int) : this() {
         this.question = question
         this.option_one = option_one
@@ -80,4 +79,5 @@ class Quiz() : Parcelable {
     override fun describeContents(): Int {
         TODO("Not yet implemented")
     }
+
 }

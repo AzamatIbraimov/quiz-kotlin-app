@@ -1,18 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".QuizActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+tools:context=".QuizActivity">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageQuestion"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:contentDescription="@string/image"-->
+<!--        android:gravity="center"-->
+<!--        android:src="@drawable/q1" />-->
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/score_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#363A43"
+        android:textSize="22sp"
+        android:text="@string/score"/>
+    <TextView
+        android:id="@+id/question_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#363A43"
+        android:textSize="22sp"
+        android:text="@string/question"/>
+    <LinearLayout
+        android:id="@+id/progress_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:indeterminate="false"/>
+        <TextView
+            android:id="@+id/question_number_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColorHint="#7A8089"
+            android:textSize="14sp"
+            tools:text="0/10"/>
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QUIZ ACTIVITY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/option_one"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            style="@style/Text_style"
+            android:freezesText="true"
+            android:text="@string/correct_ans_1" />
+
+        <RadioButton
+            android:id="@+id/option_two"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            style="@style/Text_style"
+            android:freezesText="true"
+            android:text="@string/correct_ans_2" />
+
+        <RadioButton
+            android:id="@+id/option_three"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            style="@style/Text_style"
+            android:freezesText="true"
+            android:text="@string/correct_ans_3" />
+
+        <RadioButton
+            android:id="@+id/option_four"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            style="@style/Text_style"
+            android:freezesText="true"
+            android:text="@string/correct_ans_4" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_next"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/answer_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#363A43"
+        android:textSize="22sp"
+        android:text=""/>
+</LinearLayout>
+
+</ScrollView>
