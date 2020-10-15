@@ -4,9 +4,9 @@ A classic quiz mobile application where the user will be asked a question with a
 # Project requirements:
 * Link to a repository 
 1) your code :white_check_mark:
-2) apk in releases 
+2) apk in releases :white_check_mark:
 3) name and short description :white_check_mark:
-4) screenshots in readme.md 
+4) screenshots in readme.md :white_check_mark:
 * Use of data storage (SharedPreferences, sqlite, room) :white_check_mark:
 * RecycleView or Cardview with custom layout and code :white_check_mark:
 * At least one activity should be written on Kotlin :white_check_mark:
