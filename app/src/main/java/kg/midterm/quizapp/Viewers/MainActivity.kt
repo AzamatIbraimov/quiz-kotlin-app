@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(view.context, QuizActivity::class.java)
             view.context.startActivity(intent)
         }
-
         buttonOpenQuestions.setOnClickListener { view ->
             val intent = Intent(view.context, QuestionsActivity::class.java)
             view.context.startActivity(intent)
