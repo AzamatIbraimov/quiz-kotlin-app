@@ -19,7 +19,7 @@ A classic quiz mobile application where the user will be asked a question with a
 
 <h3 align="center"><strong>Main Activity</strong></h3>
 <p align="center">
-  <img src="https://i.ibb.co/9VnhNDX/quiz-app-1.png" alt="Preview"/>
+  <img src="https://i.ibb.co/wyh6S4k/quiz-app-1.png" alt="Preview"/>
 </p>
 
 <h3 align="center"><strong>Quiz Activity</strong></h3>
