@@ -3,6 +3,7 @@
     <string name="app_name">Kotlin Quiz App</string>
     <string name="highScore">Your score is:</string>
     <string name="buttonStartQuiz">Start</string>
+    <string name="buttonOpenQuestions">See the Questions</string>
 
     <!--Quiz Activity-->
     <string name="question">Question field</string>
@@ -15,5 +16,8 @@
     <string name="correct_ans_2">Answer 2 is correct</string>
     <string name="correct_ans_3">Answer 3 is correct</string>
     <string name="correct_ans_4">Answer 4 is correct</string>
+
+    <!-- Question Content -->
+    <string name="button_additionContent">Click on item to see the answer</string>
 
 </resources>

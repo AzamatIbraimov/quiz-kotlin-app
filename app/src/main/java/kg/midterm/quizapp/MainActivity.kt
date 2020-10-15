@@ -3,7 +3,10 @@ package kg.midterm.quizapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kg.midterm.quizapp.DataAccess.QuizReaderDBHelper
+import kg.midterm.quizapp.Models.Quiz
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.questions_content.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonStartQuiz.setOnClickListener { view ->
             val intent = Intent(view.context, QuizActivity::class.java)
+            view.context.startActivity(intent)
+        }
+
+        buttonOpenQuestions.setOnClickListener { view ->
+            val intent = Intent(view.context, QuestionsActivity::class.java)
             view.context.startActivity(intent)
         }
     }
