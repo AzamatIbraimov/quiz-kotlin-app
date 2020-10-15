@@ -1,10 +1,11 @@
-package kg.midterm.quizapp
+package kg.midterm.quizapp.Viewers
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kg.midterm.quizapp.DataAccess.QuizReaderDBHelper
 import kg.midterm.quizapp.Models.Quiz
+import kg.midterm.quizapp.R
 import kotlinx.android.synthetic.main.questions_content.*
 
 class QuestionsActivity : AppCompatActivity() {

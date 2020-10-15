@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:fillViewport="true"
-tools:context=".QuizActivity">
+tools:context=".Viewers.QuizActivity">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -14,14 +14,6 @@ tools:context=".QuizActivity">
     android:padding="16dp"
     android:gravity="center">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageQuestion"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:contentDescription="@string/image"-->
-<!--        android:gravity="center"-->
-<!--        android:src="@drawable/q1" />-->
     <TextView
         android:id="@+id/score_textView"
         android:layout_width="match_parent"
@@ -31,6 +23,15 @@ tools:context=".QuizActivity">
         android:textColor="#363A43"
         android:textSize="22sp"
         android:text="@string/score"/>
+
+    <ImageView
+        android:id="@+id/imageQuestion"
+        android:layout_width="153dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:src="@drawable/question" />
+
     <TextView
         android:id="@+id/question_textView"
         android:layout_width="match_parent"

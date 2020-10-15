@@ -1,4 +1,4 @@
-package kg.midterm.quizapp
+package kg.midterm.quizapp.Viewers
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,6 +10,8 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import kg.midterm.quizapp.DataAccess.QuizReaderDBHelper
 import kg.midterm.quizapp.Models.Quiz
+import kg.midterm.quizapp.R
+import kg.midterm.quizapp.utils.Constants
 import kotlinx.android.synthetic.main.activity_quiz.*
 import java.util.ArrayList
 
@@ -152,13 +154,14 @@ class QuizActivity : AppCompatActivity() {
 
     private fun returnToMainMenu() {
         val intent: Intent = Intent(this, MainActivity::class.java).apply {
-            putExtra("EXTRA_SCORE", score)
+            putExtra(Constants.EXTRA_SCORE, score)
             when (score) {
-                0, 1, 2, 3, 4 -> putExtra("EXTRA_SCORE_COMMENTS", "Bad result. Try hard!")
-                5, 6 -> putExtra("EXTRA_SCORE_COMMENTS", "Not bad. But you can do better :)")
-                7, 8 -> putExtra("EXTRA_SCORE_COMMENTS", "Good result!")
-                9, 10 -> putExtra("EXTRA_SCORE_COMMENTS", "Awesome result! You're incredible!")
+                0, 1, 2, 3, 4 -> putExtra(Constants.EXTRA_SCORE_COMMENTS, "Bad result. Try hard!")
+                5, 6 -> putExtra(Constants.EXTRA_SCORE_COMMENTS, "Not bad. But you can do better :)")
+                7, 8 -> putExtra(Constants.EXTRA_SCORE_COMMENTS, "Good result!")
+                9, 10 -> putExtra(Constants.EXTRA_SCORE_COMMENTS, "Awesome result! You're incredible!")
             }
+            putExtra(Constants.EXTRA_QUIZ_FINISHED, "FINISHED")
         }
 
         startActivity(intent)

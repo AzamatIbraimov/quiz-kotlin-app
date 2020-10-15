@@ -1,9 +1,6 @@
 package kg.midterm.quizapp.Models
 
-import android.os.Parcel
-import android.os.Parcelable
-
-class Quiz() : Parcelable {
+class Quiz() {
     private var question: String = ""
     private var option_one: String = ""
     private var option_two: String = ""
@@ -67,17 +64,4 @@ class Quiz() : Parcelable {
     fun setCorrectAnswer(correct_answer: Int) {
         this.correct_answer = correct_answer
     }
-
-    override fun writeToParcel(parcel: Parcel, p1: Int) {
-        parcel.writeString(question)
-        parcel.writeString(option_one)
-        parcel.writeString(option_two)
-        parcel.writeString(option_three)
-        parcel.writeString(option_four)
-    }
-
-    override fun describeContents(): Int {
-        TODO("Not yet implemented")
-    }
-
 }

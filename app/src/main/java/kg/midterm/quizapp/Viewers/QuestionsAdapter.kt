@@ -1,4 +1,4 @@
-package kg.midterm.quizapp
+package kg.midterm.quizapp.Viewers
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 import kg.midterm.quizapp.Models.Quiz
+import kg.midterm.quizapp.R
 
 class QuestionsAdapter (listArray: ArrayList<Quiz>, context: Context): RecyclerView.Adapter<QuestionsAdapter.ViewHolder>() {
     private var listArrayR = listArray
