@@ -16,10 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         showScoreOfUser()
 
-        // check if the user finished the quiz then show the button "SEE THE QUESTIONS"
+        // check if the user finished the quiz then show the button "SEE THE QUESTIONS" and textView "Score"
         val scoreComment: String? = intent.getStringExtra(Constants.EXTRA_QUIZ_FINISHED)
         if (scoreComment != "FINISHED") {
+            textViewBestScore.visibility = View.INVISIBLE
             buttonOpenQuestions.visibility = View.INVISIBLE;
+        } else {
+            quizApp_imageView.setImageResource(R.drawable.finished)
         }
 
         buttonStartQuiz.setOnClickListener { view ->

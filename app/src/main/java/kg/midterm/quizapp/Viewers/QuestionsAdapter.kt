@@ -21,13 +21,13 @@ class QuestionsAdapter (listArray: ArrayList<Quiz>, context: Context): RecyclerV
         // fill in layout
         fun bind(listItem: Quiz, context: Context) {
             val correctAnswer: Int = listItem.getCorrectAnswer()
-            val questionsOptionsArray: List<String> = listOf<String>(listItem.getOptionalOne(), listItem.getOptionalTwo(), listItem.getOptionalThree(), listItem.getOptionalFour())
+            val questionOptionsArray: List<String> = listOf<String>(listItem.getOptionalOne(), listItem.getOptionalTwo(), listItem.getOptionalThree(), listItem.getOptionalFour())
 
             questionName_textView.text = listItem.getQuestion()
             itemView.setOnClickListener {
                 Toast.makeText(
                     context,
-                    "The correct answer is : ${questionsOptionsArray[correctAnswer - 1]}",
+                    "The correct answer is : ${questionOptionsArray[correctAnswer - 1]}",
                     Toast.LENGTH_LONG
                 ).show()
             }

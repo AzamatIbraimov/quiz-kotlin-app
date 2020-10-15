@@ -1,9 +1,10 @@
 <resources>
     <!--Main Activity-->
     <string name="app_name">Kotlin Quiz App</string>
+    <string name="finishedQuiz">Your have finished the quiz!</string>
     <string name="highScore">Your score is:</string>
     <string name="buttonStartQuiz">Start</string>
-    <string name="buttonOpenQuestions">See the Questions</string>
+    <string name="buttonOpenQuestions">See ALL Questions</string>
 
     <!--Quiz Activity-->
     <string name="question">Question field</string>
