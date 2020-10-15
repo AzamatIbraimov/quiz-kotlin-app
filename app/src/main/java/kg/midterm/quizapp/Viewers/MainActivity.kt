@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         if (scoreComment != "FINISHED") {
             textViewBestScore.visibility = View.INVISIBLE
             buttonOpenQuestions.visibility = View.INVISIBLE;
+            textViewFinished.visibility = View.INVISIBLE
         } else {
             quizApp_imageView.setImageResource(R.drawable.finished)
         }
