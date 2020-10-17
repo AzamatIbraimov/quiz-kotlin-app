@@ -12,7 +12,8 @@ A classic quiz mobile application where the user will be asked a question with a
 * At least one activity should be written on Kotlin :white_check_mark:
 * Misc  
 1) Application icon changed :white_check_mark:
-2) Animation and design (figma or other)
+2) Animation and design (figma or other) :white_check_mark:
+https://www.figma.com/file/pLiRoiVvKH2zLVkk4zrrLH/Quiz-App?node-id=0%3A1
 * Bonus points for retrofit calls and Unit testing 
 
 # Screenshots
