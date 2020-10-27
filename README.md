@@ -18,35 +18,18 @@ https://www.figma.com/file/pLiRoiVvKH2zLVkk4zrrLH/Quiz-App?node-id=0%3A1
 
 # Screenshots
 
-<h3 align="center"><strong>Main Activity</strong></h3>
 <p align="center">
-  <img src="https://i.ibb.co/wyh6S4k/quiz-app-1.png" alt="Preview"/>
+  <img src="https://sun9-8.userapi.com/AijUVO6ajyv7tZjgk_g47uTShrc6h7WPIyFVig/1xD3KkXvqGg.jpg" alt="Preview"/>
 </p>
 
-<h3 align="center"><strong>Quiz Activity</strong></h3>
 <p align="center">
-  <img src="https://i.ibb.co/3NnjyKX/quiz-app-2.png" alt="Preview"/>
+  <img src="https://sun9-67.userapi.com/Y1uMyqsnuWII__1Rp54ch7N6IkT04qeObNlcWw/DAZY1rGb8YQ.jpg" alt="Preview"/>
 </p>
 
-<h3 align="center"><strong>Quiz Activity after choosing an option</strong></h3>
 <p align="center">
-  <img src="https://i.ibb.co/VQCDsMh/quiz-app-3.png" alt="Preview"/>
+  <img src="https://sun3-11.userapi.com/ZTJ-zzTEZRcj_1Dw_GFKBqTo8ofjoZ462-Tm9g/-ZOrKCiYcio.jpg" alt="Preview"/>
 </p>
 
-<h3 align="center"><strong>Quiz Activity after pressing "Next" button</strong></h3>
-<p align="center">
-  <img src="https://i.ibb.co/DYVmNp0/quiz-app-4.png" alt="Preview"/>
-</p>
-
-<h3 align="center"><strong>Main Activity after finishing the quiz</strong></h3>
-<p align="center">
-  <img src="https://i.ibb.co/9WBxjyk/quiz-app-5.png" alt="Preview"/>
-</p>
-
-<h3 align="center"><strong>RecycleView Adapter where the user after pressing on item can see the correct answer</strong></h3>
-<p align="center">
-  <img src="https://i.ibb.co/z7h1Mym/quiz-app-6.png" alt="Preview"/>
-</p>
 
 # Purpose
 
